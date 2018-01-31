@@ -1,0 +1,22 @@
+{
+    "name": "drupal/social_auth_yelp",
+    "type": "drupal-module",
+    "description": "Social Auth integration for Yelp.",
+    "keywords": ["Drupal"],
+    "license": "GPL-2.0+",
+    "homepage": "https://www.drupal.org/project/social_auth_yelp",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/social_auth_yelp",
+        "source": "http://cgit.drupalcode.org/social_auth_yelp"
+    },
+    "require": {
+        "stevenmaguire/oauth2-yelp": "^0.1"
+    },
+    "authors": [
+        {
+            "name": "Neeraj Pandey (neerajpandey)",
+            "email": "neerajyednap@gmail.com"
+        }
+    ]
+}

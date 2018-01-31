@@ -1,0 +1,8 @@
+name: Social Auth Yelp
+type: module
+description: 'Social Auth integration for Yelp.'
+package: Social
+core: 8.x
+configure: social_auth_yelp.settings_form
+dependencies:
+  - social_auth (>= 8.x-0.1.x)

@@ -1,0 +1,9 @@
+services:
+  social_auth_yelp.manager:
+    class: Drupal\social_auth_yelp\YelpAuthManager
+    arguments:
+      - '@logger.factory'
+      - '@event_dispatcher'
+      - '@entity_field.manager'
+      - '@url_generator.non_bubbling'
+      - '@config.factory'

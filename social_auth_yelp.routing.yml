@@ -1,0 +1,25 @@
+social_auth_yelp.redirect_to_yelp:
+  path: 'user/login/yelp'
+  defaults:
+    _controller: '\Drupal\social_auth_yelp\Controller\YelpAuthController::redirectToYelp'
+  requirements:
+    _access: 'TRUE'
+  options:
+    no_cache: TRUE
+
+social_auth_yelp.callback:
+  path: 'user/login/yelp/callback'
+  defaults:
+    _controller: '\Drupal\social_auth_yelp\Controller\YelpAuthController::callback'
+  requirements:
+    _access: 'TRUE'
+  options:
+    no_cache: TRUE
+
+social_auth_yelp.settings_form:
+  path: 'admin/config/social-api/social-auth/yelp'
+  defaults:
+    _title: 'Social Auth Yelp settings'
+    _form: '\Drupal\social_auth_yelp\Form\YelpAuthSettingsForm'
+  requirements:
+    _permission: 'administer social api authentication'
